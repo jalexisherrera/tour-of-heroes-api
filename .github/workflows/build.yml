@@ -33,7 +33,7 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Build and analyze
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_TOKEN: sqp_6a86a1008705aa0738144b4fda47f490bd2c97f8
           SONAR_HOST_URL: http://localhost:9000
           #SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=tour-of-heroes-api -Dsonar.projectName='tour-of-heroes-api'
