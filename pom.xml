@@ -24,9 +24,17 @@
         <maven.compiler.target>1.7</maven.compiler.target>
         <springfox-swagger-ui.version>2.9.2</springfox-swagger-ui.version>
         <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+<<<<<<< HEAD
          <sonar.projectKey>tour-of-heroes-api</sonar.projectKey>
         <sonar.projectName>'tour-of-heroes-api'</sonar.projectName>
         <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
+=======
+        <sonar.host.url>http://localhost:9000</sonar.host.url>
+        <sonar.login>admin</sonar.login>
+        <sonar.password>0Su@vPQzC</sonar.password>
+        
+
+>>>>>>> c53c1b1381c2a2ebbc7484cbd755e2aa265f3e85
     </properties>
 
     <dependencies>
@@ -71,6 +79,11 @@
             <artifactId>springfox-swagger2</artifactId>
             <version>${springfox-swagger2.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.sonatype.plexus</groupId>
+            <artifactId>plexus-cipher</artifactId>
+            <version>1.4</version>
+        </dependency>     
 
         <dependency>
             <groupId>io.springfox</groupId>
@@ -135,6 +148,21 @@
                     <artifactId>maven-project-info-reports-plugin</artifactId>
                     <version>3.0.0</version>
                 </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>3.0.2</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                 </plugin>
+                 <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>3.9.1.2184</version>
+                   
+                 </plugin>
             </plugins>
         </pluginManagement>
         <plugins>
