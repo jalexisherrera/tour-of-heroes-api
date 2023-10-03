@@ -24,6 +24,9 @@
         <maven.compiler.target>1.7</maven.compiler.target>
         <springfox-swagger-ui.version>2.9.2</springfox-swagger-ui.version>
         <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+         <sonar.projectKey>tour-of-heroes-api</sonar.projectKey>
+        <sonar.projectName>'tour-of-heroes-api'</sonar.projectName>
+        <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
     </properties>
 
     <dependencies>

@@ -19,6 +19,7 @@ public class CORSFilter implements Filter {
 
 	@Override
 	public void destroy() {
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
@@ -28,6 +29,8 @@ public class CORSFilter implements Filter {
 		response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
 		response.setHeader("Access-Control-Allow-Headers", "x-requested-with, origin, content-type, accept");
 		response.setHeader("Access-Control-Max-Age", "1800");
+		response.setHeader("Access-Control-Allow-Credentials", "true");
+		response.setHeader("Access-Control-Expose-Headers", "Authorization");
 		chain.doFilter(req, res);
 	}
 
