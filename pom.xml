@@ -29,7 +29,7 @@
         <sonar.projectName>'tour-of-heroes-api'</sonar.projectName>
         <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
 
-        <!--<sonar.host.url>http://localhost:9000</sonar.host.url>-->
+        <sonar.host.url>http://200.24.16.242:9000</sonar.host.url>
    
         
 
