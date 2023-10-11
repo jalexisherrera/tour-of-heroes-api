@@ -35,4 +35,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -D"sonar.projectKey=tour-of-heroes-api" -D"sonar.projectName='tour-of-heroes-api'"
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -D"sonar.projectKey=tour-of-heroes-api" -D"sonar.projectName='tour-of-heroes-api' -D"sonar.login=70775d5066dac9668a3e753b6fceed9fcb106a1a"

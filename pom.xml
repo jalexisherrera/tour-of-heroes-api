@@ -24,6 +24,7 @@
         <sonar.projectKey>tour-of-heroes-api</sonar.projectKey>
         <sonar.projectName>'tour-of-heroes-api'</sonar.projectName>
         <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
+        <sonar.host.url>http://52.205.94.186:9000</sonar.host.url>
         
 
     </properties>
